@@ -3,6 +3,14 @@
                   
 #include <REG51F.H>
 
+
+///////////////////////////////////////////////////////
+// ISP Setting:
+// Input IRC frequency : 18.432MHZ
+///////////////////////////////////////////////////////
+
+
+
 // When you have enabled the option Stop Program Execution with Serial
 // Interrupt, the Monitor-51 uses the serial interrupt of the UART.
 // It is therefore required to reserve the memory locations for the interrupt
@@ -10,6 +18,7 @@
 
 // char code reserve [3] _at_ 0x23;   // when using on-chip UART for communication
 // char code reserve [3] _at_  0x3;   // when using off-chip UART for communication
+void Wait_ms(int ms);
 
 void wait (void)  {                   /* wait function */
   ;                                   /* only to delay for LED flashes */
@@ -18,25 +27,28 @@ void wait (void)  {                   /* wait function */
 void main (void)  {
   unsigned int i, cycle;                     /* Delay var */
   unsigned char j;                    /* LED var */
-	
+	int num_of_round=4;
+	//int Gear_Ratio=64;
+	//float Step_angle=11.25;
 	// One revolution CCW using full step mode
-	for (cycle = 0; cycle < 512*4; cycle++)
+	for (cycle = 0; cycle < 372*num_of_round; cycle++)
 	{
 			P0=0x13;
-			for (i = 0; i < 2000; i++)  {  /* Delay for 10000 Counts */
-				wait ();                       /* call wait function */
-      }
+			Wait_ms(4);
 			P0=0x26;
-			for (i = 0; i < 2000; i++)  {  /* Delay for 10000 Counts */
-				wait ();                       /* call wait function */
-      }
+			Wait_ms(4);
 			P0=0x4C;
-			for (i = 0; i < 2000; i++)  {  /* Delay for 10000 Counts */
-				wait ();                       /* call wait function */
-      }
+			Wait_ms(4);
 			P0=0x89;
-			for (i = 0; i < 2000; i++)  {  /* Delay for 10000 Counts */
-				wait ();                       /* call wait function */
-      }
+			Wait_ms(4);
 	}
+}
+
+void Wait_ms(int ms)
+{
+  unsigned int De_Cnt;
+  while( (ms--) != 0)
+  {
+    for(De_Cnt = 0; De_Cnt < 600; De_Cnt++); 
+  }  	
 }

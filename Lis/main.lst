@@ -1,4 +1,4 @@
-C51 COMPILER V9.52.0.0   MAIN                                                              04/16/2018 15:15:52 PAGE 1   
+C51 COMPILER V9.52.0.0   MAIN                                                              05/14/2018 13:15:14 PAGE 1   
 
 
 C51 COMPILER V9.52.0.0, COMPILATION OF MODULE MAIN
@@ -14,56 +14,66 @@ line level    source
    4          #include <REG51F.H>
 *** WARNING C318 IN LINE 4 OF Source\main.c: can't open file 'REG51F.H'
    5          
-   6          // When you have enabled the option Stop Program Execution with Serial
-   7          // Interrupt, the Monitor-51 uses the serial interrupt of the UART.
-   8          // It is therefore required to reserve the memory locations for the interrupt
-   9          // vector.  You can do this by adding one of the following code lines:
-  10          
-  11          // char code reserve [3] _at_ 0x23;   // when using on-chip UART for communication
-  12          // char code reserve [3] _at_  0x3;   // when using off-chip UART for communication
+   6          
+   7          ///////////////////////////////////////////////////////
+   8          // ISP Setting:
+   9          // Input IRC frequency : 18.432MHZ
+  10          ///////////////////////////////////////////////////////
+  11          
+  12          
   13          
-  14          void wait (void)  {                   /* wait function */
-  15   1        ;                                   /* only to delay for LED flashes */
-  16   1      }
-  17          
-  18          void main (void)  {
-  19   1        unsigned int i, cycle;                     /* Delay var */
-  20   1        unsigned char j;                    /* LED var */
-  21   1        
-  22   1        // One revolution CCW using full step mode
-  23   1        for (cycle = 0; cycle < 512*4; cycle++)
-  24   1        {
-  25   2            P0=0x13;
-  26   2            for (i = 0; i < 2000; i++)  {  /* Delay for 10000 Counts */
-  27   3              wait ();                       /* call wait function */
-  28   3            }
-  29   2            P0=0x26;
-  30   2            for (i = 0; i < 2000; i++)  {  /* Delay for 10000 Counts */
-  31   3              wait ();                       /* call wait function */
-  32   3            }
-  33   2            P0=0x4C;
-  34   2            for (i = 0; i < 2000; i++)  {  /* Delay for 10000 Counts */
-  35   3              wait ();                       /* call wait function */
-  36   3            }
-  37   2            P0=0x89;
-  38   2            for (i = 0; i < 2000; i++)  {  /* Delay for 10000 Counts */
-  39   3              wait ();                       /* call wait function */
-  40   3            }
-  41   2        }
-  42   1      }
-*** WARNING C280 IN LINE 20 OF Source\main.c: 'j': unreferenced local variable
+  14          // When you have enabled the option Stop Program Execution with Serial
+  15          // Interrupt, the Monitor-51 uses the serial interrupt of the UART.
+  16          // It is therefore required to reserve the memory locations for the interrupt
+  17          // vector.  You can do this by adding one of the following code lines:
+  18          
+  19          // char code reserve [3] _at_ 0x23;   // when using on-chip UART for communication
+  20          // char code reserve [3] _at_  0x3;   // when using off-chip UART for communication
+  21          
+  22          void wait (void)  {                   /* wait function */
+  23   1        ;                                   /* only to delay for LED flashes */
+  24   1      }
+  25          
+  26          void main (void)  {
+  27   1        unsigned int i, cycle;                     /* Delay var */
+  28   1        unsigned char j;                    /* LED var */
+  29   1        int num_of_round=4;
+  30   1        //int Gear_Ratio=64;
+  31   1        //float Step_angle=11.25;
+  32   1        // One revolution CCW using full step mode
+  33   1        for (cycle = 0; cycle < 372*num_of_round; cycle++)
+  34   1        {
+  35   2            P0=0x13;
+  36   2            for (i = 0; i < 3500; i++)  {  /* Delay for 10000 Counts */
+  37   3              wait ();                       /* call wait function */
+  38   3            }
+  39   2            P0=0x26;
+  40   2            for (i = 0; i < 3500; i++)  {  /* Delay for 10000 Counts */
+  41   3              wait ();                       /* call wait function */
+  42   3            }
+  43   2            P0=0x4C;
+  44   2            for (i = 0; i < 3500; i++)  {  /* Delay for 10000 Counts */
+  45   3              wait ();                       /* call wait function */
+  46   3            }
+  47   2            P0=0x89;
+  48   2            for (i = 0; i < 3500; i++)  {  /* Delay for 10000 Counts */
+  49   3              wait ();                       /* call wait function */
+  50   3            }
+  51   2        }
+  52   1      }
+*** WARNING C280 IN LINE 28 OF Source\main.c: 'j': unreferenced local variable
+C51 COMPILER V9.52.0.0   MAIN                                                              05/14/2018 13:15:14 PAGE 2   
+
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =     98    ----
+   CODE SIZE        =    112    ----
    CONSTANT SIZE    =   ----    ----
    XDATA SIZE       =   ----       1
    PDATA SIZE       =   ----    ----
    DATA SIZE        =   ----    ----
    IDATA SIZE       =   ----    ----
    BIT SIZE         =   ----    ----
-C51 COMPILER V9.52.0.0   MAIN                                                              04/16/2018 15:15:52 PAGE 2   
-
 END OF MODULE INFORMATION.
 
 
