@@ -1,0 +1,5 @@
+".\Obj\STARTUP.obj",
+".\Obj\diaper.obj",
+".\Obj\main.obj" 
+TO ".\Obj\DiaperStc" REGFILE (.\Obj\DiaperStc.ORC) 
+PRINT(".\Lis\DiaperStc.m51") RAMSIZE(256) 

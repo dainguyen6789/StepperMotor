@@ -2,7 +2,9 @@
 /* BLINKY.C - LED Flasher for the Keil MCBx51 Evaluation Board with 80C51 device*/
                   
 #include <REG51F.H>
-
+// Input IRX Frequency : 11.0592Mhz
+// Work with Motor VGSM3155, VGSM2436
+// uC can control by both 4-low bit and 4-high bit of PORT0.
 // When you have enabled the option Stop Program Execution with Serial
 // Interrupt, the Monitor-51 uses the serial interrupt of the UART.
 // It is therefore required to reserve the memory locations for the interrupt
@@ -32,7 +34,7 @@ void main (void)  {
       }
 			P0=0x4C;
 			for (i = 0; i < 2000; i++)  {  /* Delay for 10000 Counts */
-				wait ();                       /* call wait function */
+				wait ();                      /* call wait function */
       }
 			P0=0x89;
 			for (i = 0; i < 2000; i++)  {  /* Delay for 10000 Counts */
