@@ -28,19 +28,46 @@ void main (void)  {
   unsigned int i, cycle;                     /* Delay var */
   unsigned char j;                    /* LED var */
 	int num_of_round=4;
-	//int Gear_Ratio=64;
-	//float Step_angle=11.25;
-	// One revolution CCW using full step mode
+	int delay_time=30;
+	//	int Gear_Ratio=64;
+	//	float Step_angle=11.25;
+	// 	One revolution CCW using full step mode
 	for (cycle = 0; cycle < 372*num_of_round; cycle++)
 	{
-			P0=0x13;
-			Wait_ms(4);
-			P0=0x26;
-			Wait_ms(4);
-			P0=0x4C;
-			Wait_ms(4);
-			P0=0x89;
-			Wait_ms(4);
+			/*P3=0x13;
+			Wait_ms(delay_time);
+			P3=0x26;
+			Wait_ms(delay_time);
+			P3=0x4C;
+			Wait_ms(delay_time);
+			P3=0x89;
+			Wait_ms(delay_time);*/
+		
+			P3=0x31;
+			Wait_ms(delay_time);
+			P3=0x62;
+			Wait_ms(delay_time);
+			P3=0xC4;
+			Wait_ms(delay_time);
+			P3=0x98;
+			Wait_ms(delay_time);
+		//==============================
+		/*	P3=0x10;
+			Wait_ms(delay_time);
+			P3=0x30;
+			Wait_ms(delay_time);
+			P3=0x20;
+			Wait_ms(delay_time);
+			P3=0x60;
+			Wait_ms(delay_time);		
+			P3=0x40;
+			Wait_ms(delay_time);
+			P3=0xC0;
+			Wait_ms(delay_time);
+			P3=0x80;
+			Wait_ms(delay_time);
+			P3=0x90;
+			Wait_ms(delay_time);	*/
 	}
 }
 

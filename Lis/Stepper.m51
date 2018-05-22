@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        05/14/2018  13:15:15  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        05/22/2018  11:57:49  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
@@ -59,24 +59,24 @@ LINK MAP OF MODULE:  .\Obj\Stepper (?C_STARTUP)
             XDATA   00AFH     003EH     UNIT         ?XD?_WALKCHANNEL_NEW?DIAPER
             XDATA   00EDH     002CH     UNIT         ?XD?_READANDPROCESSDATA?DIAPER
             XDATA   0119H     0026H     UNIT         ?XD?STATE3_NEW2?DIAPER
-BL51 BANKED LINKER/LOCATER V6.22                                                      05/14/2018  13:15:15  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/22/2018  11:57:49  PAGE 2
 
 
-            XDATA   013FH     0008H     UNIT         ?XD?_SETBITMASK_CURRENTRED?DIAPER
-            XDATA   0147H     0006H     UNIT         ?XD?GETCHANNELSTATE?DIAPER
-            XDATA   014DH     0006H     UNIT         ?XD?GETDIFFFLAG?DIAPER
-            XDATA   0153H     0006H     UNIT         ?XD?GETAVERFLAG?DIAPER
-            XDATA   0159H     0006H     UNIT         ?XD?ISINSESSION?DIAPER
-            XDATA   015FH     0004H     UNIT         ?XD?_GETBITMASK_CURRENTRED?DIAPER
-            XDATA   0163H     0004H     UNIT         ?XD?_GETBITMASK_PRESERVED_ORANGE?DIAPER
-            XDATA   0167H     0004H     UNIT         ?XD?_GETBITMASK_PRESERVED_RED?DIAPER
-            XDATA   016BH     0004H     UNIT         ?XD?_GETBITMASK_PRESERVED_FLASHRED?DIAPER
-            XDATA   016FH     0001H     UNIT         ?XD?_RESETBITMASK_YELLOW_TRIGGERED?DIAPER
-            XDATA   0170H     0001H     UNIT         ?XD?_RESETBITMASK_GLOBAL?DIAPER
-            XDATA   0171H     0001H     UNIT         ?XD?_SETBITMASK_PRESERVED_ORANGE?DIAPER
-            XDATA   0172H     0001H     UNIT         ?XD?_SETBITMASK_PRESERVED_RED?DIAPER
-            XDATA   0173H     0001H     UNIT         ?XD?_SETBITMASK_PRESERVED_FLASHRED?DIAPER
-            XDATA   0174H     0001H     UNIT         _XDATA_GROUP_
+            XDATA   013FH     0009H     UNIT         _XDATA_GROUP_
+            XDATA   0148H     0008H     UNIT         ?XD?_SETBITMASK_CURRENTRED?DIAPER
+            XDATA   0150H     0006H     UNIT         ?XD?GETCHANNELSTATE?DIAPER
+            XDATA   0156H     0006H     UNIT         ?XD?GETDIFFFLAG?DIAPER
+            XDATA   015CH     0006H     UNIT         ?XD?GETAVERFLAG?DIAPER
+            XDATA   0162H     0006H     UNIT         ?XD?ISINSESSION?DIAPER
+            XDATA   0168H     0004H     UNIT         ?XD?_GETBITMASK_CURRENTRED?DIAPER
+            XDATA   016CH     0004H     UNIT         ?XD?_GETBITMASK_PRESERVED_ORANGE?DIAPER
+            XDATA   0170H     0004H     UNIT         ?XD?_GETBITMASK_PRESERVED_RED?DIAPER
+            XDATA   0174H     0004H     UNIT         ?XD?_GETBITMASK_PRESERVED_FLASHRED?DIAPER
+            XDATA   0178H     0001H     UNIT         ?XD?_RESETBITMASK_YELLOW_TRIGGERED?DIAPER
+            XDATA   0179H     0001H     UNIT         ?XD?_RESETBITMASK_GLOBAL?DIAPER
+            XDATA   017AH     0001H     UNIT         ?XD?_SETBITMASK_PRESERVED_ORANGE?DIAPER
+            XDATA   017BH     0001H     UNIT         ?XD?_SETBITMASK_PRESERVED_RED?DIAPER
+            XDATA   017CH     0001H     UNIT         ?XD?_SETBITMASK_PRESERVED_FLASHRED?DIAPER
 
             * * * * * * *   C O D E   M E M O R Y   * * * * * * *
             CODE    0000H     0003H     ABSOLUTE     
@@ -88,29 +88,30 @@ LINK MAP OF MODULE:  .\Obj\Stepper (?C_STARTUP)
             CODE    1C6BH     00A8H     UNIT         ?C_INITSEG
             CODE    1D13H     00A1H     UNIT         ?PR?_SETBITMASK_CURRENTRED?DIAPER
             CODE    1DB4H     008CH     UNIT         ?C_C51STARTUP
-            CODE    1E40H     006FH     UNIT         ?PR?MAIN?MAIN
-            CODE    1EAFH     005EH     UNIT         ?PR?_GETBITMASK_CURRENTRED?DIAPER
-            CODE    1F0DH     0055H     UNIT         ?PR?_GETBITMASK_PRESERVED_ORANGE?DIAPER
-            CODE    1F62H     0053H     UNIT         ?PR?_GETBITMASK_PRESERVED_FLASHRED?DIAPER
-            CODE    1FB5H     0050H     UNIT         ?PR?_GETBITMASK_PRESERVED_RED?DIAPER
-            CODE    2005H     0038H     UNIT         ?PR?ISINSESSION?DIAPER
-            CODE    203DH     0036H     UNIT         ?PR?_SETBITMASK_PRESERVED_ORANGE?DIAPER
-            CODE    2073H     0032H     UNIT         ?PR?_RESETBITMASK_YELLOW_TRIGGERED?DIAPER
-            CODE    20A5H     0031H     UNIT         ?PR?_SETBITMASK_PRESERVED_FLASHRED?DIAPER
-            CODE    20D6H     0031H     UNIT         ?PR?_ADC_GETRESULT?DIAPER
-            CODE    2107H     002EH     UNIT         ?PR?_SETBITMASK_PRESERVED_RED?DIAPER
-            CODE    2135H     002BH     UNIT         ?PR?_SETCHANNELSTATE?DIAPER
-            CODE    2160H     0021H     UNIT         ?PR?_RESETDIFFFLAG?DIAPER
-            CODE    2181H     0021H     UNIT         ?PR?_RESETINSESSIONFLAG?DIAPER
-            CODE    21A2H     001EH     UNIT         ?PR?_RESETAVERFLAG?DIAPER
-            CODE    21C0H     0015H     UNIT         ?PR?ADC_INIT?DIAPER
-            CODE    21D5H     0012H     UNIT         ?PR?GETDIFFFLAG?DIAPER
-            CODE    21E7H     0012H     UNIT         ?PR?GETAVERFLAG?DIAPER
-            CODE    21F9H     0008H     UNIT         ?PR?GETCHANNELSTATE?DIAPER
-            CODE    2201H     0008H     UNIT         ?PR?_SETDIFFFLAG?DIAPER
-            CODE    2209H     0008H     UNIT         ?PR?_SETAVERFLAG?DIAPER
-            CODE    2211H     0008H     UNIT         ?PR?_SETINSESSIONFLAG?DIAPER
-            CODE    2219H     0001H     UNIT         ?PR?WAIT?MAIN
+            CODE    1E40H     005EH     UNIT         ?PR?_GETBITMASK_CURRENTRED?DIAPER
+            CODE    1E9EH     005CH     UNIT         ?PR?MAIN?MAIN
+            CODE    1EFAH     0055H     UNIT         ?PR?_GETBITMASK_PRESERVED_ORANGE?DIAPER
+            CODE    1F4FH     0053H     UNIT         ?PR?_GETBITMASK_PRESERVED_FLASHRED?DIAPER
+            CODE    1FA2H     0050H     UNIT         ?PR?_GETBITMASK_PRESERVED_RED?DIAPER
+            CODE    1FF2H     0038H     UNIT         ?PR?ISINSESSION?DIAPER
+            CODE    202AH     0036H     UNIT         ?PR?_SETBITMASK_PRESERVED_ORANGE?DIAPER
+            CODE    2060H     0032H     UNIT         ?PR?_RESETBITMASK_YELLOW_TRIGGERED?DIAPER
+            CODE    2092H     0031H     UNIT         ?PR?_SETBITMASK_PRESERVED_FLASHRED?DIAPER
+            CODE    20C3H     0031H     UNIT         ?PR?_ADC_GETRESULT?DIAPER
+            CODE    20F4H     002EH     UNIT         ?PR?_SETBITMASK_PRESERVED_RED?DIAPER
+            CODE    2122H     002BH     UNIT         ?PR?_SETCHANNELSTATE?DIAPER
+            CODE    214DH     0026H     UNIT         ?PR?_WAIT_MS?MAIN
+            CODE    2173H     0021H     UNIT         ?PR?_RESETDIFFFLAG?DIAPER
+            CODE    2194H     0021H     UNIT         ?PR?_RESETINSESSIONFLAG?DIAPER
+            CODE    21B5H     001EH     UNIT         ?PR?_RESETAVERFLAG?DIAPER
+            CODE    21D3H     0015H     UNIT         ?PR?ADC_INIT?DIAPER
+            CODE    21E8H     0012H     UNIT         ?PR?GETDIFFFLAG?DIAPER
+            CODE    21FAH     0012H     UNIT         ?PR?GETAVERFLAG?DIAPER
+            CODE    220CH     0008H     UNIT         ?PR?GETCHANNELSTATE?DIAPER
+            CODE    2214H     0008H     UNIT         ?PR?_SETDIFFFLAG?DIAPER
+            CODE    221CH     0008H     UNIT         ?PR?_SETAVERFLAG?DIAPER
+            CODE    2224H     0008H     UNIT         ?PR?_SETINSESSIONFLAG?DIAPER
+            CODE    222CH     0001H     UNIT         ?PR?WAIT?MAIN
 
 
 
@@ -118,17 +119,17 @@ OVERLAY MAP OF MODULE:   .\Obj\Stepper (?C_STARTUP)
 
 
 SEGMENT                                            XDATA_GROUP
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/22/2018  11:57:49  PAGE 3
+
+
   +--> CALLED SEGMENT                            START    LENGTH
-BL51 BANKED LINKER/LOCATER V6.22                                                      05/14/2018  13:15:15  PAGE 3
-
-
 ----------------------------------------------------------------
 ?C_C51STARTUP                                    -----    -----
   +--> ?PR?MAIN?MAIN
   +--> ?C_INITSEG
 
-?PR?MAIN?MAIN                                    0174H    0001H
-  +--> ?PR?WAIT?MAIN
+?PR?MAIN?MAIN                                    013FH    0009H
+  +--> ?PR?_WAIT_MS?MAIN
 
 
 
@@ -178,17 +179,17 @@ SYMBOL TABLE OF MODULE:  .\Obj\Stepper (?C_STARTUP)
   C:1DB6H         LINE#         134
   C:1DB7H         LINE#         135
   C:1DB8H         LINE#         136
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/22/2018  11:57:49  PAGE 4
+
+
   C:1DBAH         LINE#         185
-BL51 BANKED LINKER/LOCATER V6.22                                                      05/14/2018  13:15:15  PAGE 4
-
-
   C:1DBDH         LINE#         196
   -------         ENDMOD        ?C_STARTUP
 
   -------         MODULE        DIAPER
   C:0000H         SYMBOL        _ICE_DUMMY_
-  C:2179H         PUBLIC        _ResetDiffFlag
-  C:202BH         PUBLIC        isInSession
+  C:218CH         PUBLIC        _ResetDiffFlag
+  C:2018H         PUBLIC        isInSession
   D:0092H         PUBLIC        P1M0
   D:0091H         PUBLIC        P1M1
   D:0080H         PUBLIC        P0
@@ -206,53 +207,53 @@ SYMBOL TABLE OF MODULE:  .\Obj\Stepper (?C_STARTUP)
   D:00A8H         PUBLIC        IE
   X:0022H         PUBLIC        BILLBOARD
   X:0026H         PUBLIC        prevMovAvg
-  C:21B8H         PUBLIC        _ResetAverFlag
+  C:21CBH         PUBLIC        _ResetAverFlag
   D:00BDH         PUBLIC        ADC_RES
   C:1721H         PUBLIC        State3_new2
   X:0036H         PUBLIC        MAXAVER
   D:00B8H         PUBLIC        IP
   X:0046H         PUBLIC        DIFF
-  C:21D5H         PUBLIC        GetDiffFlag
-  C:2073H         PUBLIC        _ResetBitMask_Yellow_Triggered
+  C:21E8H         PUBLIC        GetDiffFlag
+  C:2060H         PUBLIC        _ResetBitMask_Yellow_Triggered
   X:0056H         PUBLIC        result
   D:00D8H         PUBLIC        CCON
-  C:219AH         PUBLIC        _ResetInSessionFlag
-  C:2201H         PUBLIC        _SetDiffFlag
-  C:1F0DH         PUBLIC        _GetBitMask_Preserved_Orange
+  C:21ADH         PUBLIC        _ResetInSessionFlag
+  C:2214H         PUBLIC        _SetDiffFlag
+  C:1EFAH         PUBLIC        _GetBitMask_Preserved_Orange
   X:005AH         PUBLIC        TRIGERCHS
-  C:21E7H         PUBLIC        GetAverFlag
+  C:21FAH         PUBLIC        GetAverFlag
   D:00BCH         PUBLIC        ADC_CONTR
   D:0098H         PUBLIC        SCON
-  C:203DH         PUBLIC        _SetBitMask_Preserved_Orange
+  C:202AH         PUBLIC        _SetBitMask_Preserved_Orange
   D:0088H         PUBLIC        TCON
   X:005EH         PUBLIC        currStates
-  C:1EAFH         PUBLIC        _GetBitMask_CurrentRed
+  C:1E40H         PUBLIC        _GetBitMask_CurrentRed
   B:00C8H.4       PUBLIC        P54
-  C:2209H         PUBLIC        _SetAverFlag
+  C:221CH         PUBLIC        _SetAverFlag
   X:0076H         PUBLIC        SumTotal
-  C:21C0H         PUBLIC        ADC_Init
+  C:21D3H         PUBLIC        ADC_Init
   X:0086H         PUBLIC        TRIGERCHS_GLOBAL
   C:1D13H         PUBLIC        _SetBitMask_CurrentRed
-  C:2211H         PUBLIC        _SetInSessionFlag
-  C:20DFH         PUBLIC        _ADC_GetResult
+  C:2224H         PUBLIC        _SetInSessionFlag
+  C:20CCH         PUBLIC        _ADC_GetResult
   X:008AH         PUBLIC        MOVINGAVERAGE
   X:009AH         PUBLIC        LIFESPAN
-  C:1F62H         PUBLIC        _GetBitMask_Preserved_FlashRed
+  C:1F4FH         PUBLIC        _GetBitMask_Preserved_FlashRed
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/22/2018  11:57:49  PAGE 5
+
+
   D:009DH         PUBLIC        P1ASF
-BL51 BANKED LINKER/LOCATER V6.22                                                      05/14/2018  13:15:15  PAGE 5
-
-
   X:009EH         PUBLIC        ALERTTRYAGAIN
   X:009FH         PUBLIC        LIFESPAN_US
   X:00A3H         PUBLIC        CHS
   D:00BEH         PUBLIC        ADC_RESL
-  C:20A5H         PUBLIC        _SetBitMask_Preserved_FlashRed
-  C:21F9H         PUBLIC        GetChannelState
-  C:1FB5H         PUBLIC        _GetBitMask_Preserved_Red
+  C:2092H         PUBLIC        _SetBitMask_Preserved_FlashRed
+  C:220CH         PUBLIC        GetChannelState
+  C:1FA2H         PUBLIC        _GetBitMask_Preserved_Red
   X:00A7H         PUBLIC        MAX
   C:1B63H         PUBLIC        _ResetBitMask_Global
-  C:2153H         PUBLIC        _SetChannelState
-  C:2107H         PUBLIC        _SetBitMask_Preserved_Red
+  C:2140H         PUBLIC        _SetChannelState
+  C:20F4H         PUBLIC        _SetBitMask_Preserved_Red
   C:1241H         PUBLIC        _ReadAndProcessData
   D:00D0H         PUBLIC        PSW
   C:0003H         PUBLIC        _WalkChannel_new
@@ -298,10 +299,10 @@ SYMBOL TABLE OF MODULE:  .\Obj\Stepper (?C_STARTUP)
   C:1468H         LINE#         153
   C:1493H         LINE#         154
   C:14DCH         LINE#         156
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/22/2018  11:57:49  PAGE 6
+
+
   C:152CH         LINE#         158
-BL51 BANKED LINKER/LOCATER V6.22                                                      05/14/2018  13:15:15  PAGE 6
-
-
   C:155BH         LINE#         160
   C:157EH         LINE#         163
   C:15A0H         LINE#         165
@@ -358,10 +359,10 @@ SYMBOL TABLE OF MODULE:  .\Obj\Stepper (?C_STARTUP)
   C:1742H         LINE#         254
   C:174CH         LINE#         255
   C:1756H         LINE#         257
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/22/2018  11:57:49  PAGE 7
+
+
   C:175BH         LINE#         258
-BL51 BANKED LINKER/LOCATER V6.22                                                      05/14/2018  13:15:15  PAGE 7
-
-
   C:175DH         LINE#         259
   C:175FH         LINE#         260
   C:1761H         LINE#         262
@@ -418,10 +419,10 @@ SYMBOL TABLE OF MODULE:  .\Obj\Stepper (?C_STARTUP)
   C:1A15H         LINE#         418
   C:1A15H         LINE#         419
   C:1A1BH         LINE#         420
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/22/2018  11:57:49  PAGE 8
+
+
   C:1A33H         LINE#         423
-BL51 BANKED LINKER/LOCATER V6.22                                                      05/14/2018  13:15:15  PAGE 8
-
-
   C:1A39H         LINE#         424
   C:1A39H         LINE#         425
   C:1A3EH         LINE#         426
@@ -478,10 +479,10 @@ SYMBOL TABLE OF MODULE:  .\Obj\Stepper (?C_STARTUP)
   X:00E3H         SYMBOL        newvalue
   -------         DO            
   X:00E7H         SYMBOL        rollback_count
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/22/2018  11:57:49  PAGE 9
+
+
   -------         DO            
-BL51 BANKED LINKER/LOCATER V6.22                                                      05/14/2018  13:15:15  PAGE 9
-
-
   X:00EBH         SYMBOL        temp
   -------         ENDDO         
   -------         ENDDO         
@@ -538,10 +539,10 @@ SYMBOL TABLE OF MODULE:  .\Obj\Stepper (?C_STARTUP)
   C:038CH         LINE#         597
   C:0392H         LINE#         598
   C:0394H         LINE#         600
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/22/2018  11:57:49  PAGE 10
+
+
   C:0394H         LINE#         601
-BL51 BANKED LINKER/LOCATER V6.22                                                      05/14/2018  13:15:15  PAGE 10
-
-
   C:0397H         LINE#         602
   C:03BAH         LINE#         603
   C:03BAH         LINE#         607
@@ -598,10 +599,10 @@ SYMBOL TABLE OF MODULE:  .\Obj\Stepper (?C_STARTUP)
   C:0680H         LINE#         702
   C:0680H         LINE#         704
   C:0683H         LINE#         706
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/22/2018  11:57:49  PAGE 11
+
+
   C:0683H         LINE#         707
-BL51 BANKED LINKER/LOCATER V6.22                                                      05/14/2018  13:15:15  PAGE 11
-
-
   C:0683H         LINE#         709
   C:06A6H         LINE#         710
   C:06C5H         LINE#         713
@@ -658,12 +659,12 @@ SYMBOL TABLE OF MODULE:  .\Obj\Stepper (?C_STARTUP)
   -------         PROC          _SETBITMASK_CURRENTRED
   D:0002H         SYMBOL        i
   D:0003H         SYMBOL        setVal
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/22/2018  11:57:49  PAGE 12
+
+
   -------         DO            
-BL51 BANKED LINKER/LOCATER V6.22                                                      05/14/2018  13:15:15  PAGE 12
-
-
-  X:013FH         SYMBOL        global
-  X:0143H         SYMBOL        mask
+  X:0148H         SYMBOL        global
+  X:014CH         SYMBOL        mask
   -------         ENDDO         
   C:1D13H         LINE#         864
   C:1D17H         LINE#         865
@@ -681,74 +682,74 @@ SYMBOL TABLE OF MODULE:  .\Obj\Stepper (?C_STARTUP)
   -------         PROC          _GETBITMASK_CURRENTRED
   D:0007H         SYMBOL        i
   -------         DO            
-  X:015FH         SYMBOL        mask
+  X:0168H         SYMBOL        mask
   -------         ENDDO         
-  C:1EAFH         LINE#         886
-  C:1EAFH         LINE#         887
-  C:1EAFH         LINE#         890
-  C:1ECCH         LINE#         891
-  C:1F0CH         LINE#         892
+  C:1E40H         LINE#         886
+  C:1E40H         LINE#         887
+  C:1E40H         LINE#         890
+  C:1E5DH         LINE#         891
+  C:1E9DH         LINE#         892
   -------         ENDPROC       _GETBITMASK_CURRENTRED
   -------         PROC          _GETBITMASK_PRESERVED_ORANGE
   D:0007H         SYMBOL        mask
   -------         DO            
-  X:0163H         SYMBOL        check
+  X:016CH         SYMBOL        check
   -------         ENDDO         
-  C:1F0DH         LINE#         895
-  C:1F0DH         LINE#         896
-  C:1F0DH         LINE#         899
-  C:1F21H         LINE#         900
-  C:1F61H         LINE#         901
+  C:1EFAH         LINE#         895
+  C:1EFAH         LINE#         896
+  C:1EFAH         LINE#         899
+  C:1F0EH         LINE#         900
+  C:1F4EH         LINE#         901
   -------         ENDPROC       _GETBITMASK_PRESERVED_ORANGE
   -------         PROC          _GETBITMASK_PRESERVED_RED
   D:0007H         SYMBOL        mask
   -------         DO            
-  X:0167H         SYMBOL        check
+  X:0170H         SYMBOL        check
   -------         ENDDO         
-  C:1FB5H         LINE#         904
-  C:1FB5H         LINE#         905
-  C:1FB5H         LINE#         908
-  C:1FC4H         LINE#         909
-  C:2004H         LINE#         910
+  C:1FA2H         LINE#         904
+  C:1FA2H         LINE#         905
+  C:1FA2H         LINE#         908
+  C:1FB1H         LINE#         909
+  C:1FF1H         LINE#         910
   -------         ENDPROC       _GETBITMASK_PRESERVED_RED
   -------         PROC          _GETBITMASK_PRESERVED_FLASHRED
   D:0007H         SYMBOL        mask
   -------         DO            
-  X:016BH         SYMBOL        check
+  X:0174H         SYMBOL        check
   -------         ENDDO         
-  C:1F62H         LINE#         913
-  C:1F62H         LINE#         914
-  C:1F62H         LINE#         917
-BL51 BANKED LINKER/LOCATER V6.22                                                      05/14/2018  13:15:15  PAGE 13
+  C:1F4FH         LINE#         913
+  C:1F4FH         LINE#         914
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/22/2018  11:57:49  PAGE 13
 
 
-  C:1F74H         LINE#         918
-  C:1FB4H         LINE#         919
+  C:1F4FH         LINE#         917
+  C:1F61H         LINE#         918
+  C:1FA1H         LINE#         919
   -------         ENDPROC       _GETBITMASK_PRESERVED_FLASHRED
   -------         PROC          _RESETBITMASK_YELLOW_TRIGGERED
-  X:016FH         SYMBOL        triggered_Yellow_Mask
-  C:2073H         LINE#         922
-  C:2078H         LINE#         923
-  C:2078H         LINE#         924
-  C:207BH         LINE#         925
-  C:207BH         LINE#         926
-  C:2080H         LINE#         927
-  C:2080H         LINE#         929
-  C:2087H         LINE#         930
-  C:2087H         LINE#         931
-  C:208CH         LINE#         932
-  C:208CH         LINE#         934
-  C:2093H         LINE#         935
-  C:2093H         LINE#         936
-  C:2098H         LINE#         937
-  C:2098H         LINE#         939
-  C:209FH         LINE#         940
-  C:209FH         LINE#         941
-  C:20A4H         LINE#         942
-  C:20A4H         LINE#         943
+  X:0178H         SYMBOL        triggered_Yellow_Mask
+  C:2060H         LINE#         922
+  C:2065H         LINE#         923
+  C:2065H         LINE#         924
+  C:2068H         LINE#         925
+  C:2068H         LINE#         926
+  C:206DH         LINE#         927
+  C:206DH         LINE#         929
+  C:2074H         LINE#         930
+  C:2074H         LINE#         931
+  C:2079H         LINE#         932
+  C:2079H         LINE#         934
+  C:2080H         LINE#         935
+  C:2080H         LINE#         936
+  C:2085H         LINE#         937
+  C:2085H         LINE#         939
+  C:208CH         LINE#         940
+  C:208CH         LINE#         941
+  C:2091H         LINE#         942
+  C:2091H         LINE#         943
   -------         ENDPROC       _RESETBITMASK_YELLOW_TRIGGERED
   -------         PROC          _RESETBITMASK_GLOBAL
-  X:0170H         SYMBOL        i
+  X:0179H         SYMBOL        i
   -------         DO            
   D:0004H         SYMBOL        mask
   -------         ENDDO         
@@ -765,86 +766,86 @@ SYMBOL TABLE OF MODULE:  .\Obj\Stepper (?C_STARTUP)
   C:1C48H         LINE#         962
   -------         ENDPROC       _RESETBITMASK_GLOBAL
   -------         PROC          _SETBITMASK_PRESERVED_ORANGE
-  X:0171H         SYMBOL        mask
-  C:203DH         LINE#         967
-  C:2042H         LINE#         968
-  C:2042H         LINE#         969
+  X:017AH         SYMBOL        mask
+  C:202AH         LINE#         967
+  C:202FH         LINE#         968
+  C:202FH         LINE#         969
   -------         ENDPROC       _SETBITMASK_PRESERVED_ORANGE
   -------         PROC          _SETBITMASK_PRESERVED_RED
-  X:0172H         SYMBOL        mask
-  C:2107H         LINE#         973
-  C:210CH         LINE#         974
-  C:210CH         LINE#         975
+  X:017BH         SYMBOL        mask
+  C:20F4H         LINE#         973
+  C:20F9H         LINE#         974
+  C:20F9H         LINE#         975
   -------         ENDPROC       _SETBITMASK_PRESERVED_RED
   -------         PROC          _SETBITMASK_PRESERVED_FLASHRED
-  X:0173H         SYMBOL        mask
-  C:20A5H         LINE#         979
-BL51 BANKED LINKER/LOCATER V6.22                                                      05/14/2018  13:15:15  PAGE 14
+  X:017CH         SYMBOL        mask
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/22/2018  11:57:49  PAGE 14
 
 
-  C:20AAH         LINE#         980
-  C:20AAH         LINE#         981
+  C:2092H         LINE#         979
+  C:2097H         LINE#         980
+  C:2097H         LINE#         981
   -------         ENDPROC       _SETBITMASK_PRESERVED_FLASHRED
   -------         PROC          GETCHANNELSTATE
-  X:0147H         SYMBOL        currStates
+  X:0150H         SYMBOL        currStates
   -------         DO            
   D:0007H         SYMBOL        oldval
   -------         ENDDO         
-  C:21F9H         LINE#         985
-  C:21F9H         LINE#         986
-  C:21F9H         LINE#         989
-  C:21FDH         LINE#         990
-  C:2200H         LINE#         991
-  C:2200H         LINE#         993
+  C:220CH         LINE#         985
+  C:220CH         LINE#         986
+  C:220CH         LINE#         989
+  C:2210H         LINE#         990
+  C:2213H         LINE#         991
+  C:2213H         LINE#         993
   -------         ENDPROC       GETCHANNELSTATE
   -------         PROC          GETDIFFFLAG
-  X:014DH         SYMBOL        currStates
+  X:0156H         SYMBOL        currStates
   -------         DO            
   D:0007H         SYMBOL        tmp
   -------         ENDDO         
-  C:21D5H         LINE#         996
-  C:21D5H         LINE#         997
-  C:21D5H         LINE#         1000
-  C:21D9H         LINE#         1001
-  C:21DBH         LINE#         1002
-  C:21E6H         LINE#         1004
+  C:21E8H         LINE#         996
+  C:21E8H         LINE#         997
+  C:21E8H         LINE#         1000
+  C:21ECH         LINE#         1001
+  C:21EEH         LINE#         1002
+  C:21F9H         LINE#         1004
   -------         ENDPROC       GETDIFFFLAG
   -------         PROC          GETAVERFLAG
-  X:0153H         SYMBOL        currStates
+  X:015CH         SYMBOL        currStates
   -------         DO            
   D:0007H         SYMBOL        tmp
   -------         ENDDO         
-  C:21E7H         LINE#         1007
-  C:21E7H         LINE#         1008
-  C:21E7H         LINE#         1011
-  C:21EBH         LINE#         1012
-  C:21EDH         LINE#         1014
-  C:21F8H         LINE#         1015
+  C:21FAH         LINE#         1007
+  C:21FAH         LINE#         1008
+  C:21FAH         LINE#         1011
+  C:21FEH         LINE#         1012
+  C:2200H         LINE#         1014
+  C:220BH         LINE#         1015
   -------         ENDPROC       GETAVERFLAG
   -------         PROC          _SETDIFFFLAG
   D:0001H         SYMBOL        currStates
   -------         DO            
   D:0007H         SYMBOL        oldval
   -------         ENDDO         
-  C:2201H         LINE#         1018
-  C:2201H         LINE#         1019
-  C:2201H         LINE#         1022
-  C:2204H         LINE#         1023
-  C:2206H         LINE#         1024
+  C:2214H         LINE#         1018
+  C:2214H         LINE#         1019
+  C:2214H         LINE#         1022
+  C:2217H         LINE#         1023
+  C:2219H         LINE#         1024
   -------         ENDPROC       _SETDIFFFLAG
   -------         PROC          _SETAVERFLAG
   D:0001H         SYMBOL        currStates
   -------         DO            
   D:0007H         SYMBOL        tmp
   -------         ENDDO         
-  C:2209H         LINE#         1028
-  C:2209H         LINE#         1029
-BL51 BANKED LINKER/LOCATER V6.22                                                      05/14/2018  13:15:15  PAGE 15
+  C:221CH         LINE#         1028
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/22/2018  11:57:49  PAGE 15
 
 
-  C:2209H         LINE#         1032
-  C:220CH         LINE#         1033
-  C:220EH         LINE#         1034
+  C:221CH         LINE#         1029
+  C:221CH         LINE#         1032
+  C:221FH         LINE#         1033
+  C:2221H         LINE#         1034
   -------         ENDPROC       _SETAVERFLAG
   -------         PROC          L?0160
   -------         ENDPROC       L?0160
@@ -854,37 +855,37 @@ SYMBOL TABLE OF MODULE:  .\Obj\Stepper (?C_STARTUP)
   -------         DO            
   D:0007H         SYMBOL        oldval
   -------         ENDDO         
-  C:2153H         LINE#         1039
-  C:2153H         LINE#         1040
-  C:2153H         LINE#         1043
-  C:2156H         LINE#         1044
-  C:2159H         LINE#         1045
-  C:215DH         LINE#         1046
+  C:2140H         LINE#         1039
+  C:2140H         LINE#         1040
+  C:2140H         LINE#         1043
+  C:2143H         LINE#         1044
+  C:2146H         LINE#         1045
+  C:214AH         LINE#         1046
   -------         ENDPROC       _SETCHANNELSTATE
   -------         PROC          L?0159
   -------         ENDPROC       L?0159
   -------         PROC          ISINSESSION
-  X:0159H         SYMBOL        currStates
+  X:0162H         SYMBOL        currStates
   -------         DO            
   D:0007H         SYMBOL        oldval
   -------         ENDDO         
-  C:202BH         LINE#         1050
-  C:202BH         LINE#         1051
-  C:202BH         LINE#         1054
-  C:202FH         LINE#         1055
-  C:2031H         LINE#         1056
-  C:203CH         LINE#         1058
+  C:2018H         LINE#         1050
+  C:2018H         LINE#         1051
+  C:2018H         LINE#         1054
+  C:201CH         LINE#         1055
+  C:201EH         LINE#         1056
+  C:2029H         LINE#         1058
   -------         ENDPROC       ISINSESSION
   -------         PROC          _SETINSESSIONFLAG
   D:0001H         SYMBOL        currStates
   -------         DO            
   D:0007H         SYMBOL        oldval
   -------         ENDDO         
-  C:2211H         LINE#         1061
-  C:2211H         LINE#         1062
-  C:2211H         LINE#         1065
-  C:2214H         LINE#         1066
-  C:2216H         LINE#         1067
+  C:2224H         LINE#         1061
+  C:2224H         LINE#         1062
+  C:2224H         LINE#         1065
+  C:2227H         LINE#         1066
+  C:2229H         LINE#         1067
   -------         ENDPROC       _SETINSESSIONFLAG
   -------         PROC          L?0162
   -------         ENDPROC       L?0162
@@ -893,31 +894,31 @@ SYMBOL TABLE OF MODULE:  .\Obj\Stepper (?C_STARTUP)
   -------         DO            
   D:0007H         SYMBOL        tmp
   -------         ENDDO         
-  C:21B8H         LINE#         1072
-  C:21B8H         LINE#         1073
-  C:21B8H         LINE#         1076
-  C:21BBH         LINE#         1077
-  C:21BDH         LINE#         1078
+  C:21CBH         LINE#         1072
+  C:21CBH         LINE#         1073
+  C:21CBH         LINE#         1076
+  C:21CEH         LINE#         1077
+  C:21D0H         LINE#         1078
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/22/2018  11:57:49  PAGE 16
+
+
   -------         ENDPROC       _RESETAVERFLAG
-BL51 BANKED LINKER/LOCATER V6.22                                                      05/14/2018  13:15:15  PAGE 16
-
-
-  C:2160H         SYMBOL        L?0157
-  C:2163H         SYMBOL        L?0158
+  C:2173H         SYMBOL        L?0157
+  C:2176H         SYMBOL        L?0158
   -------         PROC          L?0156
   -------         ENDPROC       L?0156
-  C:2160H         SYMBOL        L?0157
-  C:2163H         SYMBOL        L?0158
+  C:2173H         SYMBOL        L?0157
+  C:2176H         SYMBOL        L?0158
   -------         PROC          _RESETDIFFFLAG
   D:0001H         SYMBOL        currStates
   -------         DO            
   D:0007H         SYMBOL        oldval
   -------         ENDDO         
-  C:2179H         LINE#         1083
-  C:2179H         LINE#         1084
-  C:2179H         LINE#         1087
-  C:217CH         LINE#         1088
-  C:217EH         LINE#         1089
+  C:218CH         LINE#         1083
+  C:218CH         LINE#         1084
+  C:218CH         LINE#         1087
+  C:218FH         LINE#         1088
+  C:2191H         LINE#         1089
   -------         ENDPROC       _RESETDIFFFLAG
   -------         PROC          L?0161
   -------         ENDPROC       L?0161
@@ -926,21 +927,21 @@ SYMBOL TABLE OF MODULE:  .\Obj\Stepper (?C_STARTUP)
   -------         DO            
   D:0007H         SYMBOL        oldval
   -------         ENDDO         
-  C:219AH         LINE#         1093
-  C:219AH         LINE#         1094
-  C:219AH         LINE#         1097
-  C:219DH         LINE#         1098
-  C:219FH         LINE#         1099
+  C:21ADH         LINE#         1093
+  C:21ADH         LINE#         1094
+  C:21ADH         LINE#         1097
+  C:21B0H         LINE#         1098
+  C:21B2H         LINE#         1099
   -------         ENDPROC       _RESETINSESSIONFLAG
   -------         PROC          ADC_INIT
-  C:21C0H         LINE#         1112
-  C:21C0H         LINE#         1113
-  C:21C0H         LINE#         1115
-  C:21C3H         LINE#         1117
-  C:21C6H         LINE#         1120
-  C:21C9H         LINE#         1122
-  C:21CCH         LINE#         1125
-  C:21CFH         LINE#         1126
+  C:21D3H         LINE#         1112
+  C:21D3H         LINE#         1113
+  C:21D3H         LINE#         1115
+  C:21D6H         LINE#         1117
+  C:21D9H         LINE#         1120
+  C:21DCH         LINE#         1122
+  C:21DFH         LINE#         1125
+  C:21E2H         LINE#         1126
   -------         ENDPROC       ADC_INIT
   -------         PROC          L?0163
   -------         ENDPROC       L?0163
@@ -949,24 +950,24 @@ SYMBOL TABLE OF MODULE:  .\Obj\Stepper (?C_STARTUP)
   -------         DO            
   D:0006H         SYMBOL        ADC_Value
   -------         ENDDO         
-  C:20DFH         LINE#         1138
-  C:20DFH         LINE#         1139
-  C:20DFH         LINE#         1143
-  C:20E4H         LINE#         1144
-  C:20E5H         LINE#         1145
-  C:20E6H         LINE#         1146
-  C:20E7H         LINE#         1147
-  C:20E8H         LINE#         1148
-  C:20E9H         LINE#         1149
-  C:20EAH         LINE#         1151
-BL51 BANKED LINKER/LOCATER V6.22                                                      05/14/2018  13:15:15  PAGE 17
+  C:20CCH         LINE#         1138
+  C:20CCH         LINE#         1139
+  C:20CCH         LINE#         1143
+  C:20D1H         LINE#         1144
+  C:20D2H         LINE#         1145
+  C:20D3H         LINE#         1146
+  C:20D4H         LINE#         1147
+  C:20D5H         LINE#         1148
+  C:20D6H         LINE#         1149
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/22/2018  11:57:49  PAGE 17
 
 
-  C:20EFH         LINE#         1154
-  C:20F2H         LINE#         1155
-  C:20F6H         LINE#         1156
-  C:2106H         LINE#         1157
-  C:2106H         LINE#         1158
+  C:20D7H         LINE#         1151
+  C:20DCH         LINE#         1154
+  C:20DFH         LINE#         1155
+  C:20E3H         LINE#         1156
+  C:20F3H         LINE#         1157
+  C:20F3H         LINE#         1158
   -------         ENDPROC       _ADC_GETRESULT
   -------         ENDMOD        DIAPER
 
@@ -983,48 +984,60 @@ SYMBOL TABLE OF MODULE:  .\Obj\Stepper (?C_STARTUP)
   D:00A8H         PUBLIC        IE
   D:00B8H         PUBLIC        IP
   D:00D8H         PUBLIC        CCON
-  C:1E40H         PUBLIC        main
+  C:1E9EH         PUBLIC        main
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
-  C:2219H         PUBLIC        wait
+  C:222CH         PUBLIC        wait
+  C:2155H         PUBLIC        _Wait_ms
   D:00D0H         PUBLIC        PSW
   -------         PROC          WAIT
-  C:2219H         LINE#         22
-  C:2219H         LINE#         24
+  C:222CH         LINE#         23
+  C:222CH         LINE#         25
   -------         ENDPROC       WAIT
   -------         PROC          MAIN
   -------         DO            
-  D:0006H         SYMBOL        i
-  D:0082H         SYMBOL        cycle
-  X:0174H         SYMBOL        j
-  D:0002H         SYMBOL        num_of_round
+  X:013FH         SYMBOL        i
+  X:0141H         SYMBOL        cycle
+  X:0143H         SYMBOL        j
+  X:0144H         SYMBOL        num_of_round
+  X:0146H         SYMBOL        delay_time
   -------         ENDDO         
-  C:1E40H         LINE#         26
-  C:1E40H         LINE#         29
-  C:1E44H         LINE#         33
-  C:1E5BH         LINE#         34
-  C:1E5BH         LINE#         35
-  C:1E5EH         LINE#         36
-  C:1E61H         LINE#         37
-  C:1E64H         LINE#         38
-  C:1E6FH         LINE#         39
-  C:1E72H         LINE#         40
-  C:1E75H         LINE#         41
-  C:1E78H         LINE#         42
-  C:1E83H         LINE#         43
-  C:1E86H         LINE#         44
-  C:1E89H         LINE#         45
-  C:1E8CH         LINE#         46
-  C:1E97H         LINE#         47
-  C:1E9AH         LINE#         48
-  C:1E9DH         LINE#         49
-  C:1EA0H         LINE#         50
-BL51 BANKED LINKER/LOCATER V6.22                                                      05/14/2018  13:15:15  PAGE 18
-
-
-  C:1EABH         LINE#         51
-  C:1EAEH         LINE#         52
+  C:1E9EH         LINE#         27
+  C:1E9EH         LINE#         30
+  C:1EA7H         LINE#         31
+  C:1EAEH         LINE#         35
+  C:1ED1H         LINE#         36
+  C:1ED1H         LINE#         46
+  C:1ED4H         LINE#         47
+  C:1ED7H         LINE#         48
+  C:1EDAH         LINE#         49
+  C:1EDDH         LINE#         50
+  C:1EE0H         LINE#         51
+  C:1EE3H         LINE#         52
+  C:1EE6H         LINE#         53
+  C:1EE9H         LINE#         71
+  C:1EF9H         LINE#         72
   -------         ENDPROC       MAIN
+  C:214DH         SYMBOL        L?0016
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/22/2018  11:57:49  PAGE 18
+
+
+  -------         PROC          L?0015
+  -------         ENDPROC       L?0015
+  C:214DH         SYMBOL        L?0016
+  -------         PROC          _WAIT_MS
+  D:0006H         SYMBOL        ms
+  -------         DO            
+  D:0004H         SYMBOL        De_Cnt
+  -------         ENDDO         
+  C:2155H         LINE#         74
+  C:2155H         LINE#         75
+  C:2155H         LINE#         77
+  C:215FH         LINE#         78
+  C:215FH         LINE#         79
+  C:2172H         LINE#         80
+  C:2172H         LINE#         81
+  -------         ENDPROC       _WAIT_MS
   -------         ENDMOD        MAIN
 
   -------         MODULE        ?C?FPADD
@@ -1066,6 +1079,9 @@ SYMBOL TABLE OF MODULE:  .\Obj\Stepper (?C_STARTUP)
   -------         MODULE        ?C?CLDOPTR
   C:0F44H         PUBLIC        ?C?CLDOPTR
   -------         ENDMOD        ?C?CLDOPTR
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/22/2018  11:57:49  PAGE 19
+
+
 
   -------         MODULE        ?C?CILDOPTR
   C:0F71H         PUBLIC        ?C?CILDOPTR
@@ -1078,9 +1094,6 @@ SYMBOL TABLE OF MODULE:  .\Obj\Stepper (?C_STARTUP)
   -------         MODULE        ?C?CSTOPTR
   C:0FB6H         PUBLIC        ?C?CSTOPTR
   -------         ENDMOD        ?C?CSTOPTR
-
-BL51 BANKED LINKER/LOCATER V6.22                                                      05/14/2018  13:15:15  PAGE 19
-
 
   -------         MODULE        ?C?IMUL
   C:0FD8H         PUBLIC        ?C?IMUL
@@ -1126,6 +1139,9 @@ SYMBOL TABLE OF MODULE:  .\Obj\Stepper (?C_STARTUP)
   C:1188H         PUBLIC        ?C?LILDXDATA
   C:117FH         PUBLIC        ?C?LILDXDATA1
   C:1181H         PUBLIC        ?C?LILDXDATA8
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/22/2018  11:57:49  PAGE 20
+
+
   -------         ENDMOD        ?C?LILDXDATA
 
   -------         MODULE        ?C?LSTXDATA
@@ -1139,9 +1155,6 @@ SYMBOL TABLE OF MODULE:  .\Obj\Stepper (?C_STARTUP)
   -------         MODULE        ?C?LCASE
   C:11F1H         PUBLIC        ?C?LCASE
   -------         ENDMOD        ?C?LCASE
-BL51 BANKED LINKER/LOCATER V6.22                                                      05/14/2018  13:15:15  PAGE 20
-
-
 
   -------         MODULE        ?C?IILDX
   C:122BH         PUBLIC        ?C?IILDX
@@ -1159,7 +1172,6 @@ GETAVERFLAG. . . . . . . . . . . . @0xf301
 GETCHANNELSTATE. . . . . . . . . . @0xe301
 GETDIFFFLAG. . . . . . . . . . . . @0xf301
 ISINSESSION. . . . . . . . . . . . @0xf301
-MAIN . . . . . . . . . . . . . . . @0xf7bf
 WAIT . . . . . . . . . . . . . . . @0x8000
 _ADC_GETRESULT . . . . . . . . . . @0xf087
 _RESETAVERFLAG . . . . . . . . . . @0xf301
@@ -1169,12 +1181,16 @@ _SETAVERFLAG . . . . . . . . . . . @0xf301
 _SETCHANNELSTATE . . . . . . . . . @0xf301
 _SETDIFFFLAG . . . . . . . . . . . @0xf301
 _SETINSESSIONFLAG. . . . . . . . . @0xf301
+_WAIT_MS . . . . . . . . . . . . . @0xf02f
 
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?STATE3_NEW2?DIAPER
 
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?ADC_INIT?DIAPER
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?WAIT?MAIN
 
 *** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
     SYMBOL:  _IAPERASESECTOR
@@ -1183,6 +1199,9 @@ _SETINSESSIONFLAG. . . . . . . . . @0xf301
 *** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
     SYMBOL:  PAGEWRITECOUNT
     MODULE:  .\Obj\diaper.obj (DIAPER)
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/22/2018  11:57:49  PAGE 21
+
+
 
 *** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
     SYMBOL:  _DELAYMS
@@ -1199,9 +1218,6 @@ _SETINSESSIONFLAG. . . . . . . . . @0xf301
 *** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
     SYMBOL:  ?_IAPWRITEBYTE?BYTE
     MODULE:  .\Obj\diaper.obj (DIAPER)
-BL51 BANKED LINKER/LOCATER V6.22                                                      05/14/2018  13:15:15  PAGE 21
-
-
 
 *** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
     SYMBOL:  ONEPAGECHVALUE
@@ -1243,6 +1259,9 @@ _SETINSESSIONFLAG. . . . . . . . . @0xf301
     ADDRESS: 133CH
 
 *** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/22/2018  11:57:49  PAGE 22
+
+
     SYMBOL:  ONEPAGECHVALUE
     MODULE:  .\Obj\diaper.obj (DIAPER)
     ADDRESS: 1340H
@@ -1259,9 +1278,6 @@ _SETINSESSIONFLAG. . . . . . . . . @0xf301
 
 *** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
     SYMBOL:  ONEPAGECHVALUE
-BL51 BANKED LINKER/LOCATER V6.22                                                      05/14/2018  13:15:15  PAGE 22
-
-
     MODULE:  .\Obj\diaper.obj (DIAPER)
     ADDRESS: 1366H
 
@@ -1303,6 +1319,9 @@ _SETINSESSIONFLAG. . . . . . . . . @0xf301
 *** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
     SYMBOL:  CHREADCOUNT
     MODULE:  .\Obj\diaper.obj (DIAPER)
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/22/2018  11:57:49  PAGE 23
+
+
     ADDRESS: 1664H
 
 *** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
@@ -1319,9 +1338,6 @@ _SETINSESSIONFLAG. . . . . . . . . @0xf301
     SYMBOL:  _IAPERASESECTOR
     MODULE:  .\Obj\diaper.obj (DIAPER)
     ADDRESS: 168DH
-BL51 BANKED LINKER/LOCATER V6.22                                                      05/14/2018  13:15:15  PAGE 23
-
-
 
 *** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
     SYMBOL:  PAGEWRITECOUNT
@@ -1361,7 +1377,10 @@ _SETINSESSIONFLAG. . . . . . . . . @0xf301
 *** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
     SYMBOL:  _DELAYMS
     MODULE:  .\Obj\diaper.obj (DIAPER)
-    ADDRESS: 21D3H
+    ADDRESS: 21E6H
 
-Program Size: data=9.0 xdata=373 code=8730
-LINK/LOCATE RUN COMPLETE.  39 WARNING(S),  0 ERROR(S)
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/22/2018  11:57:49  PAGE 24
+
+
+Program Size: data=9.0 xdata=381 code=8749
+LINK/LOCATE RUN COMPLETE.  40 WARNING(S),  0 ERROR(S)
