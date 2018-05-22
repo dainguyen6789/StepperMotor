@@ -25,19 +25,19 @@ void main (void)  {
 	for (cycle = 0; cycle < 512*4; cycle++)
 	{
 			P0=0x13;
-			for (i = 0; i < 2000; i++)  {  /* Delay for 10000 Counts */
+			for (i = 0; i < 2200; i++)  {  /* Delay for 10000 Counts */
 				wait ();                       /* call wait function */
       }
 			P0=0x26;
-			for (i = 0; i < 2000; i++)  {  /* Delay for 10000 Counts */
+			for (i = 0; i < 2200; i++)  {  /* Delay for 10000 Counts */
 				wait ();                       /* call wait function */
       }
 			P0=0x4C;
-			for (i = 0; i < 2000; i++)  {  /* Delay for 10000 Counts */
+			for (i = 0; i < 2200; i++)  {  /* Delay for 10000 Counts */
 				wait ();                      /* call wait function */
       }
 			P0=0x89;
-			for (i = 0; i < 2000; i++)  {  /* Delay for 10000 Counts */
+			for (i = 0; i < 2200; i++)  {  /* Delay for 10000 Counts */
 				wait ();                       /* call wait function */
       }
 	}
