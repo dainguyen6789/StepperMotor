@@ -16,30 +16,39 @@
 void wait (void)  {                   /* wait function */
   ;                                   /* only to delay for LED flashes */
 }
+void IO_Init(void);
 
 void main (void)  {
   unsigned int i, cycle;                     /* Delay var */
   unsigned char j;                    /* LED var */
-	
+	IO_Init();
 	// One revolution CCW using full step mode
 	//for (cycle = 0; cycle < 512*4; cycle++)
 	while(1)
 	{
-			P2=0x13;
-			for (i = 0; i < 2000; i++)  {  /* Delay for 10000 Counts */
+			P2=0x31;
+			for (i = 0; i < 16000; i++)  {  /* Delay for 10000 Counts */
 				wait ();                       /* call wait function */
       }
-			P2=0x26;
-			for (i = 0; i < 2000; i++)  {  /* Delay for 10000 Counts */
+			
+			P2=0x62;
+			for (i = 0; i < 16000; i++)  {  /* Delay for 10000 Counts */
 				wait ();                       /* call wait function */
       }
-			P2=0x4C;
-			for (i = 0; i < 2000; i++)  {  /* Delay for 10000 Counts */
+			P2=0xC4;
+			for (i = 0; i < 16000; i++)  {  /* Delay for 10000 Counts */
 				wait ();                      /* call wait function */
       }
-			P2=0x89;
-			for (i = 0; i < 2000; i++)  {  /* Delay for 10000 Counts */
+			P2=0x98;
+			for (i = 0; i < 16000; i++)  {  /* Delay for 10000 Counts */
 				wait ();                       /* call wait function */
       }
 	}
+}
+
+void IO_Init(void)
+{	
+	//Set P1.0 is input only.
+	P2M1 =0x00;  
+	P2M0 =0xFF;    
 }

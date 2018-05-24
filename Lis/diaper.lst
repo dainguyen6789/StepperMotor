@@ -1,4 +1,4 @@
-C51 COMPILER V9.52.0.0   DIAPER                                                            05/23/2018 15:54:03 PAGE 1   
+C51 COMPILER V9.52.0.0   DIAPER                                                            05/24/2018 15:36:21 PAGE 1   
 
 
 C51 COMPILER V9.52.0.0, COMPILATION OF MODULE DIAPER
@@ -62,7 +62,7 @@ line level    source
   52          CHSTATES    currStates;
   53          
   54          uint32      SumTotal[4] =
-C51 COMPILER V9.52.0.0   DIAPER                                                            05/23/2018 15:54:03 PAGE 2   
+C51 COMPILER V9.52.0.0   DIAPER                                                            05/24/2018 15:36:21 PAGE 2   
 
   55          {
   56            0, 0, 0, 0
@@ -126,7 +126,7 @@ line level    source
  114   2          chvalues[i]     = val[i];
  115   2          //P54         = 0;
  116   2          
-C51 COMPILER V9.52.0.0   DIAPER                                                            05/23/2018 15:54:03 PAGE 3   
+C51 COMPILER V9.52.0.0   DIAPER                                                            05/24/2018 15:36:21 PAGE 3   
 
  117   2          onePageChValue[arraySubOffset + 1] = val[i] >> 8;
  118   2          onePageChValue[arraySubOffset + 0] = val[i];
@@ -190,7 +190,7 @@ line level    source
  176   2          //SumTotal[i] += val[i] - DEFAULT_MOVING_AVERAGE;
  177   2          if (val[i] > MAX[i])
  178   2          {
-C51 COMPILER V9.52.0.0   DIAPER                                                            05/23/2018 15:54:03 PAGE 4   
+C51 COMPILER V9.52.0.0   DIAPER                                                            05/24/2018 15:36:21 PAGE 4   
 
  179   3            MAX[i]        = val[i];
  180   3          }
@@ -254,7 +254,7 @@ line level    source
  238   1        
  239   1        return flag;
  240   1      
-C51 COMPILER V9.52.0.0   DIAPER                                                            05/23/2018 15:54:03 PAGE 5   
+C51 COMPILER V9.52.0.0   DIAPER                                                            05/24/2018 15:36:21 PAGE 5   
 
  241   1      }
  242          
@@ -318,7 +318,7 @@ line level    source
  300   1        //            oldval|=(tmp);
  301   1        //            ALERTTRYAGAIN = oldval;
  302   1        //          }
-C51 COMPILER V9.52.0.0   DIAPER                                                            05/23/2018 15:54:03 PAGE 6   
+C51 COMPILER V9.52.0.0   DIAPER                                                            05/24/2018 15:36:21 PAGE 6   
 
  303   1        //        else if (tmp==1)
  304   1        //          {
@@ -382,7 +382,7 @@ line level    source
  362   2      
  363   2          // bit-mask for Red
  364   2          if ((result[i] == 4) || GetBitMask_CurrentRed(i))
-C51 COMPILER V9.52.0.0   DIAPER                                                            05/23/2018 15:54:03 PAGE 7   
+C51 COMPILER V9.52.0.0   DIAPER                                                            05/24/2018 15:36:21 PAGE 7   
 
  365   2          {
  366   3            mask        |= (1 << (i + 4));  // create bitset of current cycle RED flags at position 0xF0
@@ -446,7 +446,7 @@ line level    source
  421   2      
  422   2          // Check preserved FLASHRED triggered channels last time
  423   2          if (GetBitMask_Preserved_FlashRed(triggered_FlashRed_Mask))
-C51 COMPILER V9.52.0.0   DIAPER                                                            05/23/2018 15:54:03 PAGE 8   
+C51 COMPILER V9.52.0.0   DIAPER                                                            05/24/2018 15:36:21 PAGE 8   
 
  424   2          {
  425   3            triggered_FlashRed  = false;      // Don't send FLASHRED in this cycle
@@ -510,7 +510,7 @@ line level    source
  482   2          
  483   2            return mask;
  484   2        }
-C51 COMPILER V9.52.0.0   DIAPER                                                            05/23/2018 15:54:03 PAGE 9   
+C51 COMPILER V9.52.0.0   DIAPER                                                            05/24/2018 15:36:21 PAGE 9   
 
  485   1        
  486   1        return 0;
@@ -574,7 +574,7 @@ line level    source
  544   3              //currStates->STATES[i].peak=ReadSingleCh(CHS[i])&0xffff;
  545   3              currStates->STATES[i].peak = chvalue;
  546   3      
-C51 COMPILER V9.52.0.0   DIAPER                                                            05/23/2018 15:54:03 PAGE 10  
+C51 COMPILER V9.52.0.0   DIAPER                                                            05/24/2018 15:36:21 PAGE 10  
 
  547   3      
  548   3              //start counting
@@ -638,7 +638,7 @@ line level    source
  606   3      
  607   3              newvalue.f      = (currStates->STATES[i].peak) / (STANDARD1 * 1.0);
  608   3              MOVINGAVERAGE[i]  = newvalue.i;
-C51 COMPILER V9.52.0.0   DIAPER                                                            05/23/2018 15:54:03 PAGE 11  
+C51 COMPILER V9.52.0.0   DIAPER                                                            05/24/2018 15:36:21 PAGE 11  
 
  609   3              MAXAVER[i]      = newvalue.i;
  610   3      
@@ -702,7 +702,7 @@ line level    source
  667   2            else 
  668   2              //16-64
  669   2              SetChannelState(& (currStates->STATES[i]), 5);
-C51 COMPILER V9.52.0.0   DIAPER                                                            05/23/2018 15:54:03 PAGE 12  
+C51 COMPILER V9.52.0.0   DIAPER                                                            05/24/2018 15:36:21 PAGE 12  
 
  670   2      
  671   2            break;
@@ -766,7 +766,7 @@ line level    source
  727   5                  else 
  728   5                  {
  729   6                    currStates->STATES[i].countaver = 1;
-C51 COMPILER V9.52.0.0   DIAPER                                                            05/23/2018 15:54:03 PAGE 13  
+C51 COMPILER V9.52.0.0   DIAPER                                                            05/24/2018 15:36:21 PAGE 13  
 
  730   6                  }
  731   5                }
@@ -830,7 +830,7 @@ line level    source
  788   5      
  789   5                  //DEBUG_LOG("No Red alert!"," ");
  790   5                  //DEBUG_LOG("Not qualified with ORANGE");
-C51 COMPILER V9.52.0.0   DIAPER                                                            05/23/2018 15:54:03 PAGE 14  
+C51 COMPILER V9.52.0.0   DIAPER                                                            05/24/2018 15:36:21 PAGE 14  
 
  791   5                  SetChannelState(& (currStates->STATES[i]), 6);
  792   5      
@@ -894,7 +894,7 @@ line level    source
  850          //    temp        = newinterval % 1000000;
  851          //
  852          //    LIFESPAN_US     = temp;
-C51 COMPILER V9.52.0.0   DIAPER                                                            05/23/2018 15:54:03 PAGE 15  
+C51 COMPILER V9.52.0.0   DIAPER                                                            05/24/2018 15:36:21 PAGE 15  
 
  853          //    return result;
  854          //
@@ -958,7 +958,7 @@ line level    source
  912          
  913          uint8 GetBitMask_Preserved_FlashRed(uint8 mask)
  914          {
-C51 COMPILER V9.52.0.0   DIAPER                                                            05/23/2018 15:54:03 PAGE 16  
+C51 COMPILER V9.52.0.0   DIAPER                                                            05/24/2018 15:36:21 PAGE 16  
 
  915   1        uint32      check;
  916   1      
@@ -1022,7 +1022,7 @@ line level    source
  974          {
  975   1        TRIGERCHS_GLOBAL  |= (mask << 8);
  976   1      }
-C51 COMPILER V9.52.0.0   DIAPER                                                            05/23/2018 15:54:03 PAGE 17  
+C51 COMPILER V9.52.0.0   DIAPER                                                            05/24/2018 15:36:21 PAGE 17  
 
  977          
  978          
@@ -1086,7 +1086,7 @@ line level    source
 1036   1      }
 1037          
 1038          
-C51 COMPILER V9.52.0.0   DIAPER                                                            05/23/2018 15:54:03 PAGE 18  
+C51 COMPILER V9.52.0.0   DIAPER                                                            05/24/2018 15:36:21 PAGE 18  
 
 1039          void SetChannelState(CHSTATE * currStates, uint8 newstate)
 1040          {
@@ -1150,7 +1150,7 @@ line level    source
 1098   1        oldval        &= (SESSION_MASK);
 1099   1        currStates->flagstate = oldval;
 1100   1      
-C51 COMPILER V9.52.0.0   DIAPER                                                            05/23/2018 15:54:03 PAGE 19  
+C51 COMPILER V9.52.0.0   DIAPER                                                            05/24/2018 15:36:21 PAGE 19  
 
 1101   1      }
 1102          
@@ -1214,7 +1214,7 @@ line level    source
 1159          
 1160          
 1161          
-C51 COMPILER V9.52.0.0   DIAPER                                                            05/23/2018 15:54:03 PAGE 20  
+C51 COMPILER V9.52.0.0   DIAPER                                                            05/24/2018 15:36:21 PAGE 20  
 
 
 
